@@ -1,0 +1,26 @@
+{
+  "name": "to-do-list-app",
+  "version": "1.0.0",
+  "description": "This app manages the tasks of individual user and help to keep up with the task",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Purushoth132004/To-Do-List-App.git"
+  },
+  "author": "Purushothaman M,Priyadhashini T",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Purushoth132004/To-Do-List-App/issues"
+  },
+  "homepage": "https://github.com/Purushoth132004/To-Do-List-App#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "httpyac": "^6.16.7",
+    "nodeman": "^1.1.2",
+    "nodemon": "^3.1.10"
+  }
+}
