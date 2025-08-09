@@ -4,10 +4,11 @@ function createtasks(req){
   let title = req.body.title;
   let des = req.body.description;
   let status = req.body.status;
-  let prio = req.body.priorty;
-  let date = req.body.date;
+  let prio = req.body.priority;
+  let date = req.body.duedate;
+  let userid = req.body.userid;
 
-  connect.query("insert into tasks(title,description,status,priority,duedate) values(?,?,?,?,?)",[title,des,status,prio,date],(err,result)=>{
+  connect.query("insert into tasks(title,description,status,priority,duedate,user_id) values(?,?,?,?,?,?)",[title,des,status,prio,date,userid],(err,result)=>{
   
       if(err){
         console.log(err.message);

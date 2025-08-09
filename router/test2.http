@@ -1,0 +1,14 @@
+POST http://localhost:3001/users
+Content-Type:application/json
+
+{
+  "firstname":"Purushothaman",
+  "lastname":"M",
+  "email":"priya@gmail.com",
+  "password":"Hema@06"
+}
+DELETE http://localhost:3001/users
+Content-type:application/json
+{
+  "id":"3"
+}

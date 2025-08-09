@@ -1,5 +1,7 @@
 const createtaskprovider = require("../Provider/createtasks.js");
 const retrivetask = require("../Provider/retrivetasks.js");
+const updatetask = require("../Provider/updatetasks.js");
+const deletetask = require("../Provider/deletetasks.js");
 
 async function createtasks(req,res){
     try{
@@ -23,11 +25,24 @@ async function retrivetasks(req,res){
     }
 }
 
-function deletetasks(req,res){
+async function deletetasks(req,res){
+    try{
+        return await deletetask(req,res);
+    }
+    catch(err){
+        res.status(404).send("Not deleted");
+    }
+
 
 }
 
-function updatetasks(req,res){
+async function updatetasks(req,res){
+    try{
+    return await updatetask(req,res);
+    }catch(err){
+        console.log("Not updated")
+        res.status(400).send("Not updated");
+    }
 
 }
 

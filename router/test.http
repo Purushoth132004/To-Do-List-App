@@ -7,7 +7,32 @@ Content-Type: application/json
   "description": "Code and Learn",
   "status": "to-do",
   "priority": "high",
+  "duedate": "2025-08-10",
+  "userid": "3"
+}
+
+GET http://localhost:3001/tasks/?id=5
+
+PATCH  http://localhost:3001/tasks
+Content-Type: application/json
+
+{
+  "id":"1",
+  "title": "Leetcode",
+  "description": "Code and Learn",
+  "status": "to-do",
+  "priority": "high",
+  "duedate": "2025-08-10"
+}
+DELETE  http://localhost:3001/tasks
+Content-Type: application/json
+
+{
+  "id":"1",
+  "title": "Leetcode",
+  "description": "Code and Learn",
+  "status": "to-do",
+  "priority": "high",
   "duedate": "2025-08-10"
 }
 
-GET http://localhost:3001/tasks/?id=1
