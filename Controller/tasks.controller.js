@@ -3,17 +3,11 @@ const retrivetask = require("../Provider/retrivetasks.js");
 const updatetask = require("../Provider/updatetasks.js");
 const deletetask = require("../Provider/deletetasks.js");
 
-async function createtasks(req,res){
-    try{
-    await createtaskprovider(req);
-    return res.status(201).send("New Task Added");
-    } catch(err){
-        console.log("Error in adding task");
-        return res.status(501).send("Failed to add task");
 
-    }
+async function createtasks(data){
 
-
+    await createtaskprovider(data);
+    
 }  
 
 async function retrivetasks(req,res){
